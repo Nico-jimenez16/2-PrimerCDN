@@ -1,0 +1,19 @@
+.titulo{
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.metodos{
+    background-color: aqua;
+    padding: 1rem;
+    width: 100%;
+}
+.computadas{
+    background-color: bisque;
+    padding: 1rem;
+    width: 100%;
+}
+.container{
+    display: flex;
+}

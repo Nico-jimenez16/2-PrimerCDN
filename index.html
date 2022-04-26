@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto CDN VueJs</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script defer src="./app.js" ></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="js/index.js" ></script>
+    <div id="app">
+        <div class="titulo">
+            <h1>{{ titulo }}</h1>
+        </div>
+        <div class="container">
+            <div class="metodos">
+                <h2>-Usando metodos: {{ a }} * {{ b }} = {{ multiplicarAB() }}</h2>
+            </div>
+            <div class="computadas">
+                <h2>-Usando computadas: {{ a }} + {{ b }} = {{ sumarAB }}</h2>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

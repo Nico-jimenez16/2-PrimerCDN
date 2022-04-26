@@ -22,6 +22,20 @@
                 <h2>-Usando computadas: {{ a }} + {{ b }} = {{ sumarAB }}</h2>
             </div>
         </div>
+        
+        <!-- Usando el v-bind y v-on -->
+        <div class="container-directivas">
+            -Usando V-bind: 
+            <input type="text" v-bind:value="mensaje2" v-on:keyup="actualizarEvento($event)" >
+            <p>{{ mensaje2 }}</p>
+        </div>
+        
+        <!-- Usando el v-model -->
+        <div class="container-directivas">
+            -Usando V-model: 
+            <input type="text" v-model="mensaje1">
+            <p>{{ mensaje1 }}</p>
+        </div>
     </div>
 </body>
 </html>
